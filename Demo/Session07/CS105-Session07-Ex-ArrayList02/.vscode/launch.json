@@ -5,6 +5,13 @@
     "version": "0.2.0",
     "configurations": [
         {
+            "type": "java",
+            "name": "CodeLens (Launch) - Program",
+            "request": "launch",
+            "mainClass": "edu.sbcc.cs105.Program",
+            "projectName": "CS105-Session07-Ex-ArrayList02"
+        },
+        {
             "name": "Java",
             "type": "java",
             "request": "launch",

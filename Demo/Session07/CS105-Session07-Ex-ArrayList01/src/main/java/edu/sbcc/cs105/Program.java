@@ -11,9 +11,9 @@ public class Program {
     public static void main(String[] args) {
 
         ArrayList<String> list = new ArrayList<String>();
-
-        //ArrayList<Student> studentList = new ArrayList<>();
         
+        ArrayList<Student> studentList = new ArrayList<>();
+       
         // Add some words        
         list.add("hello");
         list.add("thing");

@@ -14,21 +14,27 @@ public class Program {
 		
 		try{
 			
-			s = new Scanner(System.in);
+			s = new Scanner(System.in);		
+			input = s.nextLine();			
+			x = Integer.parseInt(input);			
+			System.out.printf("You entered %d", x);			
+		} 	
 		
-			input = s.nextLine();				
-			
-			x = Integer.parseInt(input);
-			
-			System.out.printf("You entered %d", x);
-			
-		} catch (InputMismatchException ex){
-			System.out.print("Invalid input");
-			return;
-		} catch (NumberFormatException ex){
+		catch (NumberFormatException ex){
 			
 			System.out.printf("'%s' is not a valid entry", input);
-		} finally{
+		} 
+
+		catch (InputMismatchException ex){
+			System.out.print("Invalid input");
+			return;
+		} 
+		
+	
+		
+		
+
+		finally{
 			s.close();
 		}
 		

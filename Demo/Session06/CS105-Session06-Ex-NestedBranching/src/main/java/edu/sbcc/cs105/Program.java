@@ -16,7 +16,7 @@ public class Program {
 		
 		AwardManager m = new AwardManager();
 		
-		String awardType = m.GetAward("Dependent", 2999, "Marital");
+		String awardType = m.GetAward("Dependent", 2999, "Married");
 		
 		System.out.println(awardType);
 		
