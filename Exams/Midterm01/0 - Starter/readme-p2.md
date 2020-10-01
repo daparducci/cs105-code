@@ -12,7 +12,7 @@ You are creating a small program that will calculate federal taxes (please do no
 
 ### Class Diagram
 
-![EZTax Calcualtor](/images/Midterm01 - EZTax Calculator.png)
+![EZTax Calcualtor](images/Midterm01 - EZTax Calculator.png)
 
 ### Concepts
 
