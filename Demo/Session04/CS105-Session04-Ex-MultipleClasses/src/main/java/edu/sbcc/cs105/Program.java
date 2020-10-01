@@ -1,9 +1,16 @@
 package edu.sbcc.cs105;
 
+import java.math.BigDecimal;
+import java.util.Scanner;
+
 public class Program {
 
 	
 	public static void main(String[] args) {
+
+		
+		String x = "Hello%nWorld";
+		System.out.print(x);
 
 		Priority myPriority = Priority.HIGH;
 		

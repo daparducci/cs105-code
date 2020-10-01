@@ -5,7 +5,7 @@ public class Program {
 	public static void main(String[] args){
 		
 		// Change the value of this variable to see the difference
-		int applicantFico = 600;
+		int applicantFico = 800;
 		
 		if (applicantFico > 750) {
 			grantFivePercentLoan(); // Some method in the current class
@@ -16,10 +16,12 @@ public class Program {
 		printMessage("Done");
 
 		// Why we always want to use curly braces for ifs - indentation means nothing
-		applicantFico = 600;
-		if (applicantFico > 750)
+		applicantFico = 800;
+		if (applicantFico > 750){
 			System.out.println("You are eligible for a loan");
 			System.out.println("here is your million dollar loan");
+		}
+			
 			
 
 	}

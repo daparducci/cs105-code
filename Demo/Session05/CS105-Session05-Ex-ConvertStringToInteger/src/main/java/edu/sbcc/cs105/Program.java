@@ -11,9 +11,14 @@ public class Program {
     
     String scoreAsString = input.nextLine();
 
+    System.out.println("Enter your income");   
     int score = Integer.parseInt(scoreAsString);
+    System.out.printf("The FICO Score was %d", score);
 
-    System.out.printf("The value was %d", score);
+    String incomeAsString = input.nextLine();
+    double income = Double.parseDouble(incomeAsString);
+    System.out.printf("The income was was %d", income);
+
 }
 
 }

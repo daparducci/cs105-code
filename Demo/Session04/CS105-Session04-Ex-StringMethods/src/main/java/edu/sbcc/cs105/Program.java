@@ -8,17 +8,46 @@ public class Program {
 	 */
 	public static void main(String[] args) {
 
-//		// Get the first n characters of string
-//		String dataString = "Hello Java";
-//		int start = 6;
-//		int end = 7;
-//		
-//		String firstWord = dataString.substring(start);//, end);
-//		System.out.println(firstWord);
+
+		String one = null;
+		String two = "World";
+
+		String result = one + " " + two;
+
+		result = one.concat(" ").concat(two);
 
 		
-		String dataString = "Hello The Java";
 
+//		
+		String dataString = "Hello The Java";
+		int indexOfJ = dataString.indexOf("J");
+		String badString = dataString.substring(indexOfJ, indexOfJ + 4);
+
+		// Get length of data string
+		//int len = len(dataString);
+
+		int dataStringLength = dataString.length();
+		System.out.printf("%s : %d", dataString, dataStringLength);
+
+		boolean hEqualsH = "H".equalsIgnoreCase("h");
+
+		boolean startsWithH = dataString.startsWith("Hel");	
+		boolean startsWithh = dataString.startsWith("h");
+		//dataString = dataString.toLowerCase();
+
+		System.out.printf("%s starts with H = %b; starts with h = %b", 
+			dataString, startsWithH, startsWithh);
+	
+		boolean endsWithX = dataString.endsWith("X");
+		System.out.printf("%s ends with X = %b", 
+			dataString, endsWithX);
+	
+		String dataStringUpper = dataString.toUpperCase();
+		System.out.println(dataStringUpper);
+
+		String dataStringLower = dataString.toLowerCase();
+		System.out.println(dataStringUpper);
+				
 		// Get position of first space
 		int indexOfSpace1 = dataString.indexOf(" ");
 
@@ -33,8 +62,10 @@ public class Program {
 		int length = secondWord.length();
 		System.out.printf("The second word is %d characters long", length);
 
-		int indexOfJ = dataString.lastIndexOf('e');
-		System.out.printf("The last e occurs at index: %d", indexOfJ);
+		int lastIndexof_e = dataString.lastIndexOf('e');
+		System.out.printf("The last e occurs at index: %d", lastIndexof_e);
+
+		
 
 	}
 

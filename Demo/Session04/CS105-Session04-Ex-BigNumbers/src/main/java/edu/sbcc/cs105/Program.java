@@ -10,9 +10,15 @@ public class Program {
 	 */
 	public static void main(String[] args) {
 		
-		BigInteger bi =  new BigInteger("564582416543164634545646546546464646454222465456465465465465464655615851564281246");
+		float f = 6.02E+23f;
 
-		bi = bi.add(new BigInteger("1"));
+		BigInteger bi =  new BigInteger("5645824165431646345456465465464646464" 
+		+ "54222465456465465465465464655615851564281246");
+
+		BigInteger numToAdd = new BigInteger("1");
+
+		bi = bi.add(numToAdd);
+		
 
 		System.out.println(bi.toString());
 

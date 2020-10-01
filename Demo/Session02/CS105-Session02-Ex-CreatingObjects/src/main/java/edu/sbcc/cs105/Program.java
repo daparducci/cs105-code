@@ -1,5 +1,6 @@
 package edu.sbcc.cs105;
 
+import java.time.LocalDate;
 
 public class Program {
 
@@ -10,13 +11,25 @@ public class Program {
 	 */
 	public static void main(String[] args) {
 				
-		// How many people are there?  Should be none
-		int numPeople = Person.getNumberOfPeople();
+		// I need to track the number of people so I can display it in a report later
+		int numPeople = Person.getNumberOfPeople();  // this is a comment
+
+		/*
+			This is a multiline
+			comment 
+		*/
 		System.out.println("There are " + numPeople + " people");
 
-		// Construct a new person
+		// Construct a new person		
 		Person someOne = new Person();
+
+		// Set up test person so I can verify age calcuation is correct
+		LocalDate birthDate = LocalDate.of(2000, 01, 15);
+
 		
+		someOne.setBirthDate(birthDate);
+		int age = someOne.getAge();
+
 
 		System.out.println("Name of new person? " + someOne.getPrintName());
 

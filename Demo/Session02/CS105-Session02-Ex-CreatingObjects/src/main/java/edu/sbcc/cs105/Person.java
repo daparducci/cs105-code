@@ -1,14 +1,19 @@
 package edu.sbcc.cs105;
+
+
+
+import java.time.LocalDate;
+import java.time.Period;
+
 /**
  * This class represents a person
  * 
- * @author James Kinneavy
- *
  */
 public class Person {
 
 	private String firstName;
 	private String lastName;
+	private LocalDate birthDate;
 
 	// Static means shared across all Person objects
 	private static int numberOfPeople = 0;
@@ -30,6 +35,36 @@ public class Person {
 		numberOfPeople++;		
 	}	
 	
+	/**
+	 * Sets the person's birthdate
+	 * 
+	 * @param bd A LocalDate indicating the person's birthdate
+	 */
+	public void setBirthDate(LocalDate bd){
+		birthDate = bd;
+	}
+
+	public void setBirthDate(int year, int month,int day){
+		birthDate = LocalDate.of(year, month, day);
+	}
+
+	
+	public int getAge(){
+
+		if (birthDate == null){
+            return -1;
+        }
+
+        LocalDate now = LocalDate.now();
+        Period period = Period.between(birthDate, now);
+    
+        int age = period.getYears();
+ 
+        return age;
+
+	}
+
+
 	/**
 	 * @return the firstName
 	 */

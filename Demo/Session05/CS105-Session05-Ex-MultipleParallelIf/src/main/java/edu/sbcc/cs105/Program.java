@@ -4,7 +4,7 @@ public class Program {
 
   public static void main(String[] args) {
 
-    int ficoScore = 750;
+    int ficoScore = 501;
     double interestRate = 0;
     boolean loanDecision = true;
 
