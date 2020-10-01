@@ -16,7 +16,7 @@ The Retirement calculator should have the following methods
 - **getAnnualRetirementBenefit** - returns the annual retirement benefit based upon the retirement compensation formula
 - **getRetirementPercentage** - returns the % of their employment income the employee will receive in retirement - This is the Age Factor * Number of Years of Service
 
-![](images\RetirementCalculator.png)
+![](images/RetirementCalculator.png)
 
 **Special Requirements**
 
